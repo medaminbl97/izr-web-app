@@ -9,7 +9,7 @@ interface PrayerT {
   Asr: string;
   Maghrib: string;
   Isha: string;
-  jumaa: string;
+  Jumaa: string;
 }
 
 function usePrayerTime() {

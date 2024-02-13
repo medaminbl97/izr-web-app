@@ -1,4 +1,4 @@
-import { Hide, Show, StackItem, VStack } from "@chakra-ui/react";
+import { Hide, Image, Show, StackItem, VStack } from "@chakra-ui/react";
 import Kontakt from "./Kontakt";
 import Hero from "./Hero";
 import VKontakt from "./VKontakt";
@@ -7,6 +7,8 @@ import Galerie from "./Galerie";
 import Spenden from "./Spenden";
 import PrayerTimes from "./PrayerTimes";
 import Events from "./Events";
+import EventsBoard from "./EventsBoard";
+import app_flyer from "../assets/APPFlyer.png";
 
 function Main() {
   return (
@@ -28,6 +30,25 @@ function Main() {
         id="prayer"
       >
         <PrayerTimes />
+      </StackItem>
+
+      <StackItem
+        boxShadow="md"
+        w="100%"
+        borderRadius={10}
+        padding={{ base: 5, lg: 10 }}
+        id="prayer"
+      >
+        <Image borderRadius={10} src={app_flyer}></Image>
+      </StackItem>
+      <StackItem
+        boxShadow="md"
+        w="100%"
+        borderRadius={10}
+        padding={{ base: 5, lg: 10 }}
+        id="prayer"
+      >
+        <EventsBoard />
       </StackItem>
 
       <StackItem

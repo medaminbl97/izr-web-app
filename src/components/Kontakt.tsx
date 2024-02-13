@@ -18,6 +18,7 @@ import best from "../assets/SVG/best.svg";
 import g_halter from "../assets/SVG/g_halter.svg";
 import haus_v from "../assets/SVG/haus_v.svg";
 import sport from "../assets/SVG/Sport.svg";
+import code from "../assets/SVG/code.svg";
 
 export const kontakts = [
   {
@@ -61,6 +62,13 @@ export const kontakts = [
     tel: ["0176 24705680"],
   },
   {
+    logo: code,
+    name: "Mohamed Amine Bellil",
+    adrese: [""],
+    email: ["mbellil262@gmail.com"],
+    tel: ["0174 3759538"],
+  },
+  {
     logo: fam,
     name: "Harethe El Ouadhane",
     adrese: [""],
@@ -102,6 +110,7 @@ export const listNames = [
   "Vertretung",
   "Schulunterricht",
   "Frauen",
+  "Entwicklung",
   "Familien & Kinder",
   "Islamische Bestattungen",
   "Gebäudehalter",

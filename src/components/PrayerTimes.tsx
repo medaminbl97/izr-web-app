@@ -51,7 +51,7 @@ function PrayerTimes() {
       nameDe: "Jumaa",
       icon: <FaMosque></FaMosque>,
       nameAr: "الجمعـة",
-      time: todayPrayerTimes?.jumaa,
+      time: todayPrayerTimes?.Jumaa,
     },
   ];
 
