@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import izr_server from "../config/urls";
 
 interface PrayerT {
   Date: string;
@@ -17,7 +18,7 @@ function usePrayerTime() {
 
   useEffect(() => {
     axios
-      .get<PrayerT>("https://izr-cloud.online/getPrayers")
+      .get<PrayerT>(izr_server.url + "/getPrayers")
       .then((res) => {
         setTodayPrayerTimes(res.data);
       })

@@ -8,6 +8,7 @@ import "@fontsource-variable/raleway";
 import "@fontsource/almarai";
 import "@fontsource/poppins";
 import Main from "./components/Main";
+import PrayerTimesCalculator from "./components/prayerTimesCalculator/PrayerTimesCalculator";
 
 const theme = extendTheme({
   fonts: {
@@ -20,7 +21,6 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <CSSReset />
-      {/* <NavBar /> */}
       <Grid
         width={"100%"}
         templateAreas={{
@@ -63,6 +63,7 @@ function App() {
           </GridItem>
         </Show>
       </Grid>
+      {/* <PrayerTimesCalculator /> */}
     </ChakraProvider>
   );
 }

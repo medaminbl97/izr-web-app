@@ -9,6 +9,8 @@ import PrayerTimes from "./PrayerTimes";
 import Events from "./Events";
 import EventsBoard from "./EventsBoard";
 import app_flyer from "../assets/APPFlyer.png";
+import PrayerTimesCalculator from "./prayerTimesCalculator/PrayerTimesCalculator";
+import IZRAppButton from "./IZRAppButton";
 
 function Main() {
   return (
@@ -31,6 +33,15 @@ function Main() {
       >
         <PrayerTimes />
       </StackItem>
+      <StackItem
+        boxShadow="md"
+        w="100%"
+        borderRadius={10}
+        padding={{ base: 5, lg: 10 }}
+        id="prayer"
+      >
+        <PrayerTimesCalculator />
+      </StackItem>
 
       <StackItem
         boxShadow="md"
@@ -39,14 +50,19 @@ function Main() {
         padding={{ base: 5, lg: 10 }}
         id="prayer"
       >
-        <Image borderRadius={10} src={app_flyer}></Image>
+        <Show above="xl">
+          <Image borderRadius={10} src={app_flyer}></Image>
+        </Show>
+        <Show below="xl">
+          <IZRAppButton />
+        </Show>
       </StackItem>
       <StackItem
         boxShadow="md"
         w="100%"
         borderRadius={10}
         padding={{ base: 5, lg: 10 }}
-        id="prayer"
+        id="events"
       >
         <EventsBoard />
       </StackItem>
@@ -73,7 +89,7 @@ function Main() {
       >
         <UberUns />
       </StackItem>
-      <StackItem
+      {/* <StackItem
         boxShadow="md"
         w="100%"
         borderRadius={10}
@@ -81,7 +97,7 @@ function Main() {
         id="events"
       >
         <Events />
-      </StackItem>
+      </StackItem> */}
       <StackItem
         boxShadow="md"
         w="100%"
